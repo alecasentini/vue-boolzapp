@@ -25,12 +25,14 @@ body{
 .application{
     width: 80%!important;
     height: 90%!important;
+    position: relative;
 }
 
 .bg-lightgray{
     background-color: #EAEAEA;
 }
 
+/* left */
 #account{
     height: 8%;
 }
@@ -81,6 +83,8 @@ i{
     height: 76%;
 }
 
+/* right */
+
 #now-chat{
     height: 8%;
 }
@@ -90,4 +94,57 @@ i{
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+#chat{
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+    height: 84%;
+    padding-top: 4% ;
+}
+
+.message{
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 66.6666%;
+    margin: 5px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.sent{
+    background-color: #d5f9ba;
+}
+
+.received{
+    background-color: white;
+}
+
+.ora{
+    position: absolute;
+    font-size: 10px;
+    right: 3px;
+    bottom: 3px;
+}
+
+#write{
+    height: 8%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#text{
+    width: 80%;
+}
+
+#emoji,
+#mic{
+    width: 10%;
+    text-align: center;
+}
+
+#emoji i,
+#mic i{
+    color:#6B7376;
 }
