@@ -80,7 +80,7 @@
                             <img :src="contacts[activeIndex].avatar" :alt="contacts[activeIndex].name">
                             <div class="d-flex flex-column ms-2">
                                 <span class="fw-semibold">{{contacts[activeIndex].name}}</span>
-                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
+                                <span class="text-black-50 fs-6">Ultimo accesso oggi alle 12:00</span>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -105,10 +105,11 @@
                         <i class="fa-regular fa-face-smile fs-5"></i>
                     </div>
                     <div id="text" class="input-group">
-                        <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="write">
+                        <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="write" v-model="inputValue">
                     </div>
-                    <div id="mic">
-                        <i class="fa-solid fa-microphone fs-5"></i>
+                    <div id="mic-sent">
+                        <i class="fa-solid fa-microphone" v-if="!inputValue"></i>
+                        <i class="fa-solid fa-paper-plane" v-if="inputValue"></i>
                     </div>
                 </div>
 

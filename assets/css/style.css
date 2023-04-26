@@ -151,13 +151,13 @@ i{
 }
 
 #emoji,
-#mic{
+#mic-sent{
     width: 10%;
     text-align: center;
 }
 
 #emoji i,
-#mic i{
+#mic-sent i{
     color:#6B7376;
 }
 
