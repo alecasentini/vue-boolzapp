@@ -176,6 +176,7 @@ createApp({
   methods: {
     setActive(index) {
         this.activeIndex = index;
+        this.inputValue = '';
     },
 
     formatDate(date) {
