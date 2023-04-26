@@ -93,19 +93,10 @@
 
                 <!-- chat -->
                 <div id="chat" class="d-flex flex-column px-5">
-                    <div class="message sent">
-                        <p class="m-0">Hai portato a spasso il cane?</p>
-                        <p class="ora text-black-50 mb-0">15.30</p>
+                    <div v-for="message in contacts[activeIndex].messages" :key="message.date" class="message" :class="message.status">
+                        <p class="m-0">{{ message.message }}</p>
+                        <p class="ora text-black-50 mb-0">{{ formatDate(message.date) }}</p>
                     </div>
-                    <div class="message sent">
-                        <p class="m-0">Ricordati di stendere i panni</p>
-                        <p class="ora text-black-50 mb-0">15.50</p>
-                    </div>
-                    <div class="message received">
-                        <p class="m-0">Tutto fatto!</p>
-                        <p class="ora text-black-50 mb-0">16.15</p>
-                    </div>
-
                 </div>
 
                 <!-- write -->
