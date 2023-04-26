@@ -176,13 +176,23 @@ createApp({
         this.activeIndex = index;
     },
 
+    
+
     formatDate(date) {
         const d = new Date(date);
         const hh = d.getHours().toString().padStart(2, '0');
         const mm = d.getMinutes().toString().padStart(2, '0');
         return `${hh}:${mm}`;
+    },
+  convertDate(dateString) {
+        const [day, month, yearAndTime] = dateString.split('/');
+        const [year, time] = yearAndTime.split(' ');
+        return `${year}-${month}-${day}T${time}`;
+    },
+    formatAndConvertDate(dateString) {
+        const convertedDate = this.convertDate(dateString);
+        return this.formatDate(convertedDate);
     }
-  
 
   }
 }).mount('#app')
