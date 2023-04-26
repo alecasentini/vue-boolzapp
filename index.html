@@ -56,66 +56,17 @@
 
                 <!-- contatti -->
                 <div id="contacts" class="bg-white">
-                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
+                    <div v-for="(elem, index) in contacts" :key="index" class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
                         <div class="d-flex">
-                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
+                            <img :src="elem.avatar" alt="elem.name">
                             <div class="d-flex flex-column ms-2">
-                                <span class="fw-semibold">Michele</span>
+                                <span class="fw-semibold">{{elem.name}}</span>
                                 <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
                             </div>
                         </div>
                         <span class="text-black-50 fs-6">12:00</span>
                     </div>
-                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
-                        <div class="d-flex">
-                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
-                            <div class="d-flex flex-column ms-2">
-                                <span class="fw-semibold">Michele</span>
-                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
-                            </div>
-                        </div>
-                        <span class="text-black-50 fs-6">12:00</span>
-                    </div>
-                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
-                        <div class="d-flex">
-                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
-                            <div class="d-flex flex-column ms-2">
-                                <span class="fw-semibold">Michele</span>
-                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
-                            </div>
-                        </div>
-                        <span class="text-black-50 fs-6">12:00</span>
-                    </div>
-                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
-                        <div class="d-flex">
-                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
-                            <div class="d-flex flex-column ms-2">
-                                <span class="fw-semibold">Michele</span>
-                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
-                            </div>
-                        </div>
-                        <span class="text-black-50 fs-6">12:00</span>
-                    </div>
-                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
-                        <div class="d-flex">
-                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
-                            <div class="d-flex flex-column ms-2">
-                                <span class="fw-semibold">Michele</span>
-                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
-                            </div>
-                        </div>
-                        <span class="text-black-50 fs-6">12:00</span>
-                    </div>
-                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
-                        <div class="d-flex">
-                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
-                            <div class="d-flex flex-column ms-2">
-                                <span class="fw-semibold">Michele</span>
-                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
-                            </div>
-                        </div>
-                        <span class="text-black-50 fs-6">12:00</span>
-                    </div>
+                    
                 </div>
             </div>
 
