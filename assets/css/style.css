@@ -9,4 +9,59 @@ body{
     height: 100vh;
     background-image:linear-gradient(to bottom, #009688, #009688 15%, #D9DBD4 15%, #D9DBD4 100%); 
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.application{
+    width: 80%!important;
+    height: 90%!important;
+
+}
+
+.control{
+    border: 1px solid red;
+}
+
+.bg-lightgray{
+    background-color: #EAEAEA;
+}
+
+#utente img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+i{
+    color: #b1b1b1;
+}
+
+#notifiche{
+    background-color: #8edafc;
+}
+
+#bell{
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.fa-bell-slash{
+    color: #8edafc;
 }
