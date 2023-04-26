@@ -25,7 +25,6 @@ body{
 .application{
     width: 80%!important;
     height: 90%!important;
-
 }
 
 .control{
@@ -34,6 +33,10 @@ body{
 
 .bg-lightgray{
     background-color: #EAEAEA;
+}
+
+#account{
+    height: 8%;
 }
 
 #utente img{
@@ -49,10 +52,10 @@ i{
 
 #notifiche{
     background-color: #8edafc;
+    height: 10%;
 }
 
-#bell{
-    
+#bell{ 
     background-color: rgba(255, 255, 255, 0.8);
     height: 60px;
     width: 60px;
@@ -64,4 +67,20 @@ i{
 
 .fa-bell-slash{
     color: #8edafc;
+}
+
+#search{
+    height: 6%;
+}
+
+.contact img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#contacts{
+    overflow-y: scroll;
+    height: 76%;
 }

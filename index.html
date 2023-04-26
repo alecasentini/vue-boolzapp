@@ -20,12 +20,12 @@
         <div class="application row">
 
             <!-- left -->
-            <div class="col-4 control  p-0">
+            <div class="col-4 control h-100 p-0">
 
                 <!-- mio utente -->
-                <div class="d-flex justify-content-between align-items-center bg-lightgray">
+                <div id="account" class="d-flex justify-content-between align-items-center bg-lightgray">
                     <div id="utente" class="d-flex align-items-center m-2">
-                        <img src="./assets/img/avatar_io.jpg" alt="my-avatar">
+                        <img src="./assets/img/avatar_io.jpg" alt="avatar_io">
                         <span class="ms-2 fw-semibold">Nome Utente</span>
                     </div>
 
@@ -49,9 +49,24 @@
                 </div>
 
                 <!-- barra ricerca -->
-                <div id="search" class="input-group p-2 bg-lightgray">
+                <div id="search" class="d-flex align-content-center input-group p-2 bg-lightgray">
                     <span class="input-group-text bg-white" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+
+                <!-- contatti -->
+                <div id="contacts" class="bg-white">
+                    <div class="contact d-flex justify-content-between ps-3 pe-2 py-2 bg-white">
+                        <div class="d-flex">
+                            <img src="./assets/img/avatar_1.jpg" alt="avatar_1">
+                            <div class="d-flex flex-column ms-2">
+                                <span class="fw-semibold">Michele</span>
+                                <span class="text-black-50 fs-6">Ultimo messaggio inviato</span>
+                            </div>
+                        </div>
+                        <span class="text-black-50 fs-6">12:00</span>
+
+                    </div>
                 </div>
             </div>
 
