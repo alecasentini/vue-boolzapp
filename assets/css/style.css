@@ -27,10 +27,6 @@ body{
     height: 90%!important;
 }
 
-.control{
-    border: 1px solid red;
-}
-
 .bg-lightgray{
     background-color: #EAEAEA;
 }
@@ -83,4 +79,15 @@ i{
 #contacts{
     overflow-y: scroll;
     height: 76%;
+}
+
+#now-chat{
+    height: 8%;
+}
+
+#now-chat img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
