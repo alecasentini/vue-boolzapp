@@ -165,11 +165,16 @@ createApp({
                     }
                 ],
             }
-        ]
+        ],
+
+        activeIndex : 0,
       
     }
   },
   methods: {
+    setActive(index) {
+        this.activeIndex = index;
+    }
   
 
   }
