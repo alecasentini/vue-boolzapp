@@ -195,6 +195,17 @@ createApp({
         return this.formatDate(convertedDate);
     },
 
+    sendMessage() {
+        console.log(this.activeIndex);
+        this.contacts[this.activeIndex].messages.push({
+            date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+            message: this.inputValue,
+            status: 'sent'
+        });
+        this.inputValue = '';
+    }
+    
+
 
   }
 }).mount('#app')
