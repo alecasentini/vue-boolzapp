@@ -51,12 +51,12 @@
                 <!-- barra ricerca -->
                 <div id="search" class="d-flex align-content-center input-group p-2 bg-lightgray">
                     <span class="input-group-text bg-white" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" aria-describedby="basic-addon1" v-model="searchValue">
                 </div>
 
                 <!-- contatti -->
                 <div id="contacts" class="bg-white">
-                    <div v-for="(elem, index) in contacts" :key="index" class="contact d-flex justify-content-between ps-3 pe-2 py-2" :class="{ active: index === activeIndex }" @click="setActive(index)">
+                    <div v-for="(elem, index) in filteredContacts" :key="index" class="contact d-flex justify-content-between ps-3 pe-2 py-2" :class="{ active: index === activeIndex }" @click="setActive(index)">
                         <div class="d-flex">
                             <img :src="elem.avatar" alt="elem.name">
                             <div class="d-flex flex-column ms-2">

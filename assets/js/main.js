@@ -169,10 +169,17 @@ createApp({
 
         activeIndex : 0,
 
-        inputValue: ''
+        inputValue: '',
+
+        searchValue: '',
       
     }
   },
+  computed: {
+    filteredContacts() {
+        return this.contacts.filter(contact => contact.name.toLowerCase().includes(this.searchValue.toLowerCase()));
+    }
+},
   methods: {
     setActive(index) {
         this.activeIndex = index;
