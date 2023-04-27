@@ -203,16 +203,20 @@ createApp({
     },
 
     sendMessage() {
-        console.log(this.activeIndex);
         this.contacts[this.activeIndex].messages.push({
             date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
             message: this.inputValue,
             status: 'sent'
         });
         this.inputValue = '';
+        setTimeout(() => {
+            this.contacts[this.activeIndex].messages.push({
+                date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                message: 'ok',
+                status: 'received'
+            });
+        },1000);
     }
-    
-
 
   }
 }).mount('#app')
