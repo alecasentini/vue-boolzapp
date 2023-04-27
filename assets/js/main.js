@@ -216,6 +216,16 @@ createApp({
                 status: 'received'
             });
         },1000);
+    },
+
+    getLastMessageTime(contact) {
+        if (contact.messages.length > 0) {
+            const lastMessageDate = contact.messages[contact.messages.length - 1].date;
+            const convertedDate = this.convertDate(lastMessageDate);
+            return dayjs(convertedDate).format('HH:mm');
+        } else {
+            return '';
+        }
     }
 
   }
