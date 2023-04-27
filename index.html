@@ -81,7 +81,7 @@
                             <img :src="contacts[activeIndex].avatar" :alt="contacts[activeIndex].name">
                             <div class="d-flex flex-column ms-2">
                                 <span class="fw-semibold">{{contacts[activeIndex].name}}</span>
-                                <span class="text-black-50 fs-6">Ultimo accesso oggi alle 12:00</span>
+                                <span class="text-black-50 fs-6">Ultimo accesso oggi alle {{ getLastMessageTime(contacts[activeIndex]) }}</span>
                             </div>
                         </div>
                         <div class="d-flex">
