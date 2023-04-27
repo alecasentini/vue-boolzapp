@@ -123,6 +123,7 @@ i{
     width: max-content;
     margin: 5px 0;
     display: inline-block;
+    position: relative;
 }
 
 .sent{
@@ -168,4 +169,20 @@ i:hover{
 .contact:hover{
     cursor: pointer;
     background-color: #E9EBEB;
+}
+
+.fa-solid.fa-check{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: none;
+    font-size: 10px;
+}
+
+.dropdown-item{
+    font-size: 12px;
+}
+
+.message:hover .fa-solid.fa-check{
+    display: block;
 }
