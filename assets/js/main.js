@@ -226,6 +226,10 @@ createApp({
         } else {
             return '';
         }
+    },
+
+    deleteMessage(index) {
+        this.contacts[this.activeIndex].messages.splice(index, 1);
     }
 
   }

@@ -94,13 +94,13 @@
 
                 <!-- chat -->
                 <div id="chat" class="d-flex flex-column px-5">
-                    <div v-for="message in contacts[activeIndex].messages" :key="message.date" class="message" :class="message.status">
+                    <div v-for="(message, index) in contacts[activeIndex].messages" :key="message.date" class="message" :class="message.status">
                         <p class="m-0">{{ message.message }}</p>
                         <p class="ora text-black-50 mb-0">{{ formatAndConvertDate(message.date) }}</p>
                         <i class="fa-solid fa-check dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Message Info</a></li>
-                                <li><a class="dropdown-item" href="#">Delete Message</a></li>
+                                <li><a class="dropdown-item" href="#" @click="deleteMessage(index)">Delete Message</a></li>
                             </ul>
                         </i>
                         
